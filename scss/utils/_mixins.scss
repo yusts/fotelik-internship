@@ -1,0 +1,23 @@
+@mixin media-nav {
+    @media screen and (max-width: 991px) {
+      @content;
+    }
+  }
+
+@mixin media-nav-md {
+    @media screen and (max-width: 771px){
+      @content;
+    }
+}
+
+@mixin  media-nav-sm {
+    @media screen and (max-width: 345px) {
+      @content;
+    }
+}
+
+@mixin media-rotate {
+  @media screen and (max-height: 420px) { 
+    @content;
+  }
+}

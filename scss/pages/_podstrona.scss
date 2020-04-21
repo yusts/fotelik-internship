@@ -1,0 +1,254 @@
+.pathcontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: -25px;
+    a {
+        font-size: 14px;
+        font-weight: $regular;
+        color: $dark-grey;
+        text-decoration: none;
+        
+        &::after {
+            content: '>';
+            color: $dark-grey;
+            margin: 0 5px;
+            transition: none;
+        }
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: $regular;
+        color: $dark-grey;
+        text-decoration: none;
+    }
+
+    time {
+        font-size: 14px;
+        font-weight: $regular;
+        color: $dark-grey;
+    }
+}
+
+.article {
+    
+    .article-info {
+        
+        a {
+            display: block;
+            font-size: 30px;
+            font-weight: $bold;
+            letter-spacing: 0.17px;
+            margin-bottom: 29px;
+            
+        }
+    }
+
+    .article-content{
+        margin-top: 25px;
+        
+        p {
+            font-size: 16px;
+            font-weight: $regular;
+            letter-spacing: 0.4px;
+            padding: 15px 0;
+            margin: 0;
+            @include media-nav {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.comment-article{
+    width: 100%;
+}
+
+.comment-form{
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    @include media-nav-sm {
+        flex-direction: column;
+    }
+}
+
+.article-form{
+    width: 60%;
+    text-align: center;
+    @include media-nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: $regular;
+        letter-spacing: 0.63px;
+        padding: 23px 0 16px 0;
+        margin: 0;
+    }
+
+    .agree {
+        text-align: start;
+        margin-top: 14px;
+        
+        label {
+            font-size: 14px;
+            font-weight: $regular;
+            letter-spacing: 0.35px;
+            color: $black-color;
+        }
+    }
+}
+
+.captcha-ranking {
+    margin-top: 10px;
+    width: 100%;
+    @include media-nav-sm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rating-widget {
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-around;
+        @include media-nav-sm{
+            flex-direction: column;
+        }
+
+    }
+
+    .grade {
+        font-size: 18px;
+        font-weight: $regular;
+        letter-spacing: 0.45px;
+        color: $black-color;
+        margin-bottom: 10px;
+    }
+}
+
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+  }
+  .rating-stars ul > li.star {
+    display:inline-block;
+    font-size:1.2em; /* Change the size of the stars */
+    color:#e8e8e8; /* Color on idle state */
+    text-shadow: 0 0 3px $black-color;
+    
+    .user-rating {
+        color: $black-color;
+        text-shadow: 0 0 3px $black-color;
+    }
+  }
+  
+  
+  /* Hover state of the stars */
+  .rating-stars ul > li.star.hover > i.rating {
+    color: $black-color;
+  }
+  
+  /* Selected state of the stars */
+  .rating-stars ul > li.star.selected > i.rating {
+    color: $black-color;
+  }
+
+
+  .comments {
+
+    h2 {
+        margin-top: 24px;
+    }
+
+    hr {
+        margin: 22px 0;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h2 {
+        font-size: 28px;
+        font-weight: $bold;
+        letter-spacing: 0.35px;
+    }
+    
+  }
+  .usercomment {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 59px;
+    padding-right: 18px;
+    @include media-nav {
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    .usernick {
+        font-size: 14px;
+        font-weight: $bold;
+        letter-spacing: 0.35px;
+        margin-bottom: 27px;
+    }
+
+    .usercmnt {
+        font-size: 14px;
+        font-weight: $regular;
+        letter-spacing: 0.35px;
+    }
+
+    .user-cmnt {
+        width: 40%;
+        @include media-nav {
+            width: 100%;
+        }
+    }
+
+    .date-rating {
+        width: 35%;
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        @include media-nav {
+            width: 100%;
+            margin-top: 12px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rating-widget {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        time {
+            font-size: 14px;
+            font-weight: $regular;
+            color: $black-color;
+        }
+
+        .user-grade {
+            font-size: 14px;
+            font-weight: $bold;
+            padding-right: 8px;
+        }
+
+        ul {
+            margin: 0;
+
+            li.star {
+                font-size:0.8em;
+            }
+        }
+    }
+    
+  }
+

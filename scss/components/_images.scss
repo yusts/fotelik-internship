@@ -1,0 +1,33 @@
+img {
+    width: 100%;
+    height: auto;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.cont-img img{
+    width: auto;
+
+    @include media-nav {
+        width: 100%;
+    }
+}
+
+.nav-top img{
+    @include media-nav-sm {
+        width: 80%;
+    }
+}
+
+.video-item img {
+    margin-bottom: 29px;
+}
+
+.black-sqr img {
+    margin-bottom: 24px;
+}
+
+.footer-left img {
+    width: auto;
+}

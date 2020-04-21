@@ -1,0 +1,234 @@
+.news {
+    width: 70%;
+    @include media-nav {
+        width: 50%;
+    }
+    @include media-nav-md {
+        width: 100%;
+    }
+
+    .tips {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 43px;
+        justify-content: space-between;
+        @include media-nav {
+            justify-content: center;    
+                .tips-item {
+                    text-align: left;
+                    margin-bottom: 30px; 
+                    a {
+                        text-align: justify;
+                    }
+                }         
+        }
+        .tips-left{
+            width: 33%;
+            @include media-nav {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .ads-middle{
+            width: 30%;
+            text-align: center;
+            @include media-nav {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .tips-right{
+            width: 33%;
+            @include media-nav {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.hot{
+    .hot-info{
+        position: relative;
+        &_about {
+            margin: 0;
+            position: absolute;
+            background: $white-color;
+            bottom: 0;
+            width: 100%;
+            padding-top: 15px;
+            p {
+                font-size: 14px;
+                font-weight: $regular;
+                color: $dark-grey;
+            }
+            span {
+                border-bottom: 2px solid $primary-color;
+                padding-bottom: 8px;
+                
+            }
+
+        }
+    }
+
+    .hot-content {
+        margin-top: 5px;
+
+        a {
+            display: block;
+            font-size: 30px;
+            font-weight: $bold;
+            letter-spacing: 0.17px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: $regular;
+            letter-spacing: 0.2px;
+            padding: 19px 0 34px 0;
+            margin: 0;
+
+        }
+
+    }
+
+    }
+
+    .ads {
+        margin-bottom: 12px;
+    }
+    .news-conts {
+        .news-cont {
+            margin-top: 31px;
+            hr {
+                display: block;
+                height: 2px;
+                background-color: #d7d7d7;
+                width: 100%;
+                bottom: 0;
+                border: none;
+                margin: 35px 0 0 0 ;
+            }
+            .news-flex {
+                display: flex;
+                @include media-nav {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                .cont-img {
+                    margin-right: 15px;
+                    @include media-nav {
+                        margin: 0;
+                    }
+                }
+                .cont-info {
+                    margin-left: 15px;
+                    @include media-nav {
+                        text-align: left;
+                        margin: 0;
+                    }
+
+                    .section {
+                        p {
+                            padding-top: 11px;
+                            font-size: 14px;
+                            font-weight: $regular;
+                            color: $dark-grey;
+                            margin: 0;
+                        }
+                        
+                        span {
+                            border-bottom: 2px solid $primary-color;
+                            padding-bottom: 8px;
+                            
+                        }
+                    }
+                    .info-preview {
+                        margin-top: 25px;
+                        @include media-nav {
+                            text-align: justify;
+                        }
+
+                        a {
+                            display: block;
+                            font-size: 25px;
+                            font-weight: $regular;
+                            letter-spacing: 0.14px;
+                            margin-bottom: 28px;
+                            @include media-nav {
+                                font-size: 22px;
+                                margin-bottom: 22px;   
+                                text-align: left;
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                            font-weight: $regular;
+                            letter-spacing: 0.4px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .interesting-tips {
+        margin-top: 40px;
+
+        a {
+            display: block;
+            margin: 0;
+            font-size: 26px;
+            font-weight: $bold;
+            letter-spacing: 0.17px;
+        }
+
+            .tips-item {
+                margin-bottom: 70px;
+
+                .tips-info {
+                    position: relative;
+                    padding-bottom: 8px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 2px;
+                        width: 65px;
+                        height: 2px;
+                        background-color: $primary-color;
+                    }
+                
+                    p {
+                        margin: 13px 0 0 0;
+                        padding-left: 2px;
+                        font-size: 14px;
+                        font-weight: $regular;
+                        color: $dark-grey;
+                    }
+                }
+
+                .tips-cont {
+                    padding-top: 20px;
+                        padding-right: 39px;
+                    a {
+                        display: block;
+                        font-size: 18px;
+                        font-weight: $bold;
+                        letter-spacing: 0.06px;
+                        margin: 0;
+                        text-align: left;
+                    }
+                }
+            }
+
+    }
+    
+    

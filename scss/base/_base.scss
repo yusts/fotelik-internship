@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  @include media-nav {
+    padding-top: 90px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p,
+a {
+  font-family: "Roboto", sans-serif;
+  color: $black-color;
+  margin: 0;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.nav-bottom a {
+  &:hover {
+    color: $black-color;
+    border-bottom: 2px solid $black-color;
+  }
+}
+
+li:focus {
+  outline: none;
+}
+
+.menu-box li {
+  width: 100%;
+  border-bottom: 1px solid $black-color;
+  @include media-rotate {
+    width: 50%;
+    border-bottom: none;
+  }
+}
